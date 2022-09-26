@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenes | PulpiFrutas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    
+        <div class="container">
+            <div class="navbar">
+                <a class="logo">
+                    Pulpi<span>Frutas</span>
+                </a>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="cuenta.html">Cuenta</a></li>
+                    </ul>
+                </nav>
+                <a href="ordenes.html"><img src="img/bolsadecompras.png" width="30px" height="30px"></a>
+                <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-- cart items details -->
+
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Total</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/mango.png">
+                        <div>
+                            <p>PulpiFruta de Mango Casero</p>
+                            <small>Precio: $3.700</small>
+                            <br>
+                            <a href="">Retirar</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$3.700</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/fresa.png">
+                        <div>
+                            <p>PulpiFruta de Fresa Casero</p>
+                            <small>Precio: $4.700</small>
+                            <br>
+                            <a href="">Retirar</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$4.700</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/mora.png">
+                        <div>
+                            <p>PulpiFruta de Mora Casero</p>
+                            <small>Precio: $2.600</small>
+                            <br>
+                            <a href="">Retirar</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$2.600</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/guanabana.png">
+                        <div>
+                            <p>PulpiFruta de Guanábana Casero</p>
+                            <small>Precio: $2.700</small>
+                            <br>
+                            <a href="">Retirar</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$2.700</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Sub Total</td>
+                    <td>$13.700</td>
+                </tr>
+                <tr>
+                    <td>Domicilio</td>
+                    <td>$2.000</td>
+                </tr>
+                <tr>
+                    <td>Precio Total</td>
+                    <td>$15.700</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Descarga nuestra app</h3>
+                    <p>Descarga la aplicación para IOS y Android</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png">
+                        <img src="img/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/Logo.png">
+                    <p>Nuestro propósito es ofrecerte un producto 100% natural fuera de procesos químicos, al igual traer su proyecto de emprenidmiento a nuestra página para que reconozcan tu producto y obtengas beneficios.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li>Promociones</li>
+                        <li>Entrada de página</li>
+                        <li>Política de Privacidad</li>
+                        <li>Terminos y Condiciones</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Redes Sociales</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>WhatsApp</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - PulpiFrutas</p>
+        </div>
+    </div>
+
+    <!-- js for toggle menu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>

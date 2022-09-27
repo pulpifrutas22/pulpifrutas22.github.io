@@ -12,13 +12,13 @@ body{
 
 .logo{
     font-size: 1.4rem;
-    color: var(--text-color);
+    color: #ff8000;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0 auto 0 0;
 }
 .logo span{
-    color: #ff0000;
+    color: #ff8000;
 }
 
 /*-- navbar */
@@ -77,7 +77,7 @@ p{
 }
 .btn{
     display: inline-block;
-    background: #ff523b;
+    background: #ff8000;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -86,11 +86,12 @@ p{
 }
 
 .btn:hover{
-    background: #563434;
+    background: #90EE90;
+    color: #000;
 }
 
 .header{
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#fff, #90EE90);
 }
 .header .row{
     margin-top: 70px;
@@ -166,7 +167,7 @@ h4{
 /*-- offer */
 
 .offer{
-    background: radial-gradient(#fff, #ADD8E6);
+    background: radial-gradient(#fff, #ff8000);
     margin-top: 80px;
     padding: 30px 0;
 }

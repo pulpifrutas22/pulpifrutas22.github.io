@@ -388,7 +388,7 @@ th:last-child{
 
 .account-page{
     padding: 50px 0;
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#fff, #800080);
 }
 .form-container{
     background: #fff;
@@ -526,7 +526,7 @@ form a{
 .form__cta{
     font-family: inherit;
     font-size: 1rem;
-    background-color: #089FE0;
+    background: #800080;
     color: #fff;
     border: none;
     font-weight: 300;
@@ -534,6 +534,68 @@ form a{
     border-radius: 1em;
     cursor: pointer;
     font-weight: 400;
+}
+
+/*-- estilo hover imagen --*/
+
+.small-categories{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.small-categories figure{
+    position: relative;
+    height:260px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px;
+    color: rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+.small-categories figure img{
+    width: 90%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.small-categories figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 128, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.small-categories figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.small-categories figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.small-categories figure:hover > .img{
+    transform: scale(1.5);
+}
+.small-categories figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.small-categories figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
 }
 
 

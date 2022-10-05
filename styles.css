@@ -1,3 +1,9 @@
+/*-- alertas --*/
+
+.rojo{
+    color: red;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +14,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/*-- Logo */
+/*-- Logo --*/
 
 .logo{
     font-size: 1.4rem;
